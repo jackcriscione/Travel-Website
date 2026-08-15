@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trip Planning</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<header>
+	<h1>Trip Planning</h1>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="new_york.html">New York</a></li>
+		<li><a href="bermuda.html">Bermuda</a></li>
+		<li><a href="spain.html">Spain</a></li>
+		<li><a href="greece.html">Greece</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="planning.html">Planning</a></li>
+		<li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+<div class="container">
+
+<!-- Travel Tools -->
+<div class="planning">
+
+	<h2>Destination Quiz</h2>
+	<p>What type of trip sounds best to you?</p>
+	<!-- User Input -->
+	<label for="tripType">Trip Type:</label>
+	<select id="tripType">
+		<option value="beach">Beach vacation</option>
+		<option value="history">History and architecture</option>
+		<option value="city">City and culture</option>
+		<option value="nature">Nature and outdoors</option>
+	</select><br><br>
+	<button id="quizButton">Find My Destination</button>
+	<p id="quizResult"></p>
+	
+
+	<br><h2>Travel Budget Calculator</h2>
+	<p>Enter the number of days you will travel and your estimated daily budget.</p>
+	<label for="days">Days:</label>
+	<input type="number" id="days"><br><br>
+	<label for="dailyBudget">Daily Budget ($):</label>
+	<input type="number" id="dailyBudget"><br><br>
+	<button id="budgetButton">Calculate</button>
+	<p id="budgetResult"></p>
+
+
+	<br><h2>Temperature Converter</h2>
+	<label for="temperature">Temperature:</label>
+	<input type="number" id="temperature"><br><br>
+	<label for="conversion">Conversion:</label>
+	<select id="conversion">
+		<option value="CtoF">Celsius to Fahrenheit</option>
+		<option value="FtoC">Fahrenheit to Celsius</option>
+	</select><br><br>
+	<button id="temperatureButton">Convert</button>
+	<p id="temperatureResult"></p>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer>
+	<p>&copy; 2026 Jack Criscione</p>
+	<a href="#top" style ="color:white">Go to top</a>
+</footer>
+
+
+<script src="planning_scripts.js"></script>
+
+</body>
+
+</html>

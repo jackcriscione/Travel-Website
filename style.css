@@ -1,0 +1,218 @@
+/* Normal Style */
+body{
+	margin:0;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#f4f4f5;
+	color:#333;
+}
+
+/* Header Section */
+header{
+	background:#09a129;
+	color:white;
+	text-align:center;
+	padding:25px;
+}
+
+header h1{
+	margin:0;
+	font-size:42px;
+}
+
+
+
+/* Navigation Bar On Every Page */
+nav{
+	background:#036d19;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:flex;
+	justify-content:center;
+}
+
+nav li{
+	margin:0;
+}
+
+nav a{
+	display:block;
+	padding:18px 25px;
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+nav a:hover{
+	background:#14cc60;
+}
+
+
+
+/* Main Image on the Home Page */
+.main_image{
+	width:100%;
+	height:450px;
+	background-image:url("photos/barcelona.png");
+	background-size:cover;
+	background-position:center;
+}
+
+
+
+/* Page Content - 95% width */
+.container{
+	width:95%;
+	margin:auto;
+	padding:25px 0;
+}
+
+/* Page Content - 90% width */
+.container_2{
+	width:90%;
+	margin:auto;
+	padding:25px 0;
+	font-size: 120%;
+}
+
+
+/* Footer Section On Each Page */
+footer{
+	background:#036d19;
+	color:white;
+	text-align:center;
+	padding:15px;
+	margin-top:30px;
+}
+
+
+
+/* Destination Sections */
+.city{
+	display:flex;
+	gap:25px;
+	margin-bottom:40px;
+	background:white;
+	padding:20px;
+	border-radius:8px;
+}
+
+.city img{
+	width:300px;
+	height:200px;
+	object-fit:cover;
+}
+
+.info{
+	flex:1;
+}
+
+
+/* Gallery Page */
+.gallery{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	gap:15px;
+}
+
+.gallery img{
+	width:100%;
+	height:250px;
+	object-fit:cover;
+}
+
+
+/* Contact Page */
+.contact{
+	background:#EEDC5B;
+	padding:30px;
+	text-align:center;
+}
+
+
+/* Planning Trips Page */
+.planning{
+	background:white;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+	font-size: 130%;
+}
+
+
+button{
+	background:#067b21;
+	color:white;
+	border:none;
+	padding:10px 15px;
+	cursor:pointer;
+	font-size: 78%;
+}
+
+input, select{
+	padding:8px;
+}
+
+.container h2{
+	margin-top:30px;
+}
+
+/* Mobile Device Layout */
+@media only screen and (max-width: 575px){
+	.city{
+		float:none;
+		display:block;
+		width:90%;
+		margin:auto;
+		margin-bottom:40px;
+		background:white;
+		padding:20px;
+		border-radius:8px;
+	}
+
+	.gallery{
+		float:none;
+		width:90%;
+		margin:auto;
+		display:block;
+	}
+
+	.planning{
+		float:none;
+		width:90%;
+		margin:auto;
+		padding:30px;
+		font-size: 130%;
+	}
+
+	.city img{
+		width:100%;
+		height:auto;
+	}
+
+	.gallery img{
+		width:100%;
+		height:auto;
+		margin-bottom:15px;
+	}
+
+	/* New Navigation for mobile */
+	nav ul{
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	nav li{
+		width:33.33%;
+		text-align:center;
+	}
+
+	nav a{
+		padding:10px 5px;
+	}
+
+}
